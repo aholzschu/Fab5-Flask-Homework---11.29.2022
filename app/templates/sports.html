@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for favorite in favorites %}
+{% if favorite == 'Cleveland Browns' %}
+  <h1>{{favorite}}</h1>
+{% else %}
+ <h2>{{favorite}}</h2>
+{% endif %}
+{% endfor %}
+{% endblock %}
